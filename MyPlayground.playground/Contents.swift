@@ -1,18 +1,15 @@
 import Cocoa
 
-let day: String = "Monday"
-let dailyTemperature: Int = 75
-var temperature: Int = 70
+let day:String = "Monday"
+let hour:String = "6"
+let minutes:String = "15"
+let currentPeriodOfTheDay:String = "PM"
+let currnetTimeZone:String = "PST"
+let shortDay = day.prefix(3)
 
-print("Today is \(day). Rise and shine!")
-print("The temperature on \(day) is \(dailyTemperature)°F")
-print("The Temperature on \(day) Morning is \(temperature)°F")
+var time:String = hour + ":" + minutes + " " + currentPeriodOfTheDay
 
-temperature  =  80
+time += " \(currnetTimeZone)"
 
-print("The Temperature on \(day) Evening is \(temperature)°F")
-
-let weeklyTemperature = 75
-temperature = weeklyTemperature
-
-print("The average temperature this week is \(temperature)°F.")
+print("Today is \(shortDay)")
+print("It is \(time) on \(day)")
