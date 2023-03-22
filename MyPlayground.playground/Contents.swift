@@ -1,15 +1,40 @@
 import Cocoa
 
-let day:String = "Monday"
-let hour:String = "6"
-let minutes:String = "15"
-let currentPeriodOfTheDay:String = "PM"
-let currnetTimeZone:String = "PST"
-let shortDay = day.prefix(3)
+let freeApp: Bool = true
+let morningTemperature = 70
+let eveningTemperature = 80
+let temperatureDegree = "Fahrenheit"
 
-var time:String = hour + ":" + minutes + " " + currentPeriodOfTheDay
 
-time += " \(currnetTimeZone)"
+if freeApp == true {
+    print("You are using the free version of the app. Buy the full version of the app to get access to all of its features.")
+}
 
-print("Today is \(shortDay)")
-print("It is \(time) on \(day)")
+if temperatureDegree == "Fahrenheit" {
+    if morningTemperature < eveningTemperature {
+        print("The morning’s weather report is \(morningTemperature) degrees Fahrenheit.")
+    } else {
+        print("The evening's weather report is \(eveningTemperature) degrees Fahrenheit.")
+    }
+} else {
+    if morningTemperature < eveningTemperature {
+        print("The morning’s weather report is \(morningTemperature) degrees Celsius.")
+    } else {
+        print("The evening's weather report is \(eveningTemperature) degrees Celsius.")
+    }
+}
+
+
+if (temperatureDegree == "Fahrenheit") || (temperatureDegree == "Celsius") {
+    print("The app is configured properly")
+} else {
+    print("The app isn’t configured properly")
+}
+
+switch temperatureDegree {
+    case "Fahrenheit": print("The app is configured for the US.")
+    case "Celsius": print("The app is configured for Europe.")
+    default: print("The app has an unknown configuration.")
+}
+
+
