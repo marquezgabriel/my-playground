@@ -1,40 +1,14 @@
-import Cocoa
-
-let freeApp: Bool = true
-let morningTemperature = 70
-let eveningTemperature = 80
-let temperatureDegree = "Fahrenheit"
-
-
-if freeApp == true {
-    print("You are using the free version of the app. Buy the full version of the app to get access to all of its features.")
+let levels = 10
+let freeLevels = 4
+let bonusLevel = 3
+for level in 1...levels {
+  if level == bonusLevel {
+    print("Skip bonus level \(bonusLevel).")
+    continue
+  }
+  print("Play level \(level).")
+  if level == freeLevels {
+    print("You have played all \(freeLevels) free levels. Buy the game to play the remaining \(levels - freeLevels) levels.")
+    break
+  }
 }
-
-if temperatureDegree == "Fahrenheit" {
-    if morningTemperature < eveningTemperature {
-        print("The morning’s weather report is \(morningTemperature) degrees Fahrenheit.")
-    } else {
-        print("The evening's weather report is \(eveningTemperature) degrees Fahrenheit.")
-    }
-} else {
-    if morningTemperature < eveningTemperature {
-        print("The morning’s weather report is \(morningTemperature) degrees Celsius.")
-    } else {
-        print("The evening's weather report is \(eveningTemperature) degrees Celsius.")
-    }
-}
-
-
-if (temperatureDegree == "Fahrenheit") || (temperatureDegree == "Celsius") {
-    print("The app is configured properly")
-} else {
-    print("The app isn’t configured properly")
-}
-
-switch temperatureDegree {
-    case "Fahrenheit": print("The app is configured for the US.")
-    case "Celsius": print("The app is configured for Europe.")
-    default: print("The app has an unknown configuration.")
-}
-
-
