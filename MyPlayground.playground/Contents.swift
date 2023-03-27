@@ -1,41 +1,30 @@
-var password = "1234"
-let passcode = Int(password)
-print("The passcode of the app is \(passcode!).")
-password = "hello world"
-if let code = Int(password) {
-  print("The passcode of the app is \(code).")
-} else {
-  print("Invalid passcode!")
+// Arrays
+
+var levelScores = [Int]()
+
+if levelScores.count == 0 {
+    print("Start playing the game!")
 }
-let accessCode: Int
-if let code = Int(password) {
-  accessCode = code
-} else {
-  accessCode = 1111
+
+let firstLevelScore = 10
+levelScores.append(firstLevelScore)
+
+print("The first level's score is: \(levelScores[0])")
+
+let levelBonusScore = 40
+levelScores[0] += levelBonusScore
+
+print("The first level's total score is: \(levelScores[0])")
+
+let freeLevelScores = [20, 30]
+levelScores += freeLevelScores
+
+let freeLevels = 3
+
+if levelScores.count == freeLevels {
+    print("You have to buy the game in order to play its full version.")
+    levelScores = [Int]()
+    print("Game restarted!")
 }
-print("The passcode of the app is \(accessCode).")
-let firstPassword = "hello"
-let secondPassword = "world"
-if let firstPasscode = Int(firstPassword),
-  let secondPasscode =
-    Int(secondPassword)
-{
-  print(
-    "The first passcode of the app is \(firstPasscode) and the second passcode of the app is \(secondPasscode)."
-  )
-} else {
-  print("Invalid passcodes!")
-}
-let firstAccessCode: Int
-let secondAccessCode: Int
-if let firstPasscode = Int(firstPassword),
-  let secondPasscode =
-    Int(secondPassword)
-{
-  firstAccessCode = firstPasscode
-  secondAccessCode = secondPasscode
-} else {
-  firstAccessCode = 1111
-  secondAccessCode = 2222
-}
-print("The first passcode of the app is \(firstAccessCode) and the second passcode of the app is \(secondAccessCode).")
+
+
