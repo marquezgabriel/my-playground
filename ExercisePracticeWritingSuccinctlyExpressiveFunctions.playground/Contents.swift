@@ -14,8 +14,9 @@ for _ in 1...3 {
     print(goldBars)
 }
 
+
 incrementInventory(&goldBars, by: 300)
 print(goldBars)
 
-incrementInventory(&goldBars, by: 50)
+incrementInventory(&goldBars, by: 300)
 print(goldBars)
