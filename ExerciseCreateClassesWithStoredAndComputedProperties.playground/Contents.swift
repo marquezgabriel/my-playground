@@ -14,3 +14,4 @@ class LocalFile {
 let file = LocalFile(name: "image", fileExtension: ".PNG")
 
 print(file.fullFileName)
+
