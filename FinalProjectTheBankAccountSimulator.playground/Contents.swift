@@ -1,16 +1,16 @@
-
+// Step 1
 class OpenBankAccount {
-    
-    var accountType:String = ""
-    
-    func welcomeCustomer() {
-            print("Welcome to your virtual bank system.")
-            print("What kind of account would you like to open?")
-            print("1. Debit account")
-            print("2. Credit account")
+    var accountType:String = "" // Step 2
+    func greetings() {
+        print("Welcome to your virtual bank system.")
         }
-    
-    func makeBankAccount(numberPadKey:Int) {
+    func onboardCustomer() {
+        print("What kind of account would you like to open?")
+        print("1. Debit account")
+        print("2. Credit account")
+    }
+    // Step 3
+    func accountType(numberPadKey:Int) {
         print("The selected option is: \(numberPadKey)")
         repeat {
             switch numberPadKey {
@@ -21,7 +21,14 @@ class OpenBankAccount {
         } while accountType != ""
         print("You have opened a \(accountType) account.")
     }
+    
 }
+
+let myBankAccount = OpenBankAccount() // Step 4
+myBankAccount.greetings()
+myBankAccount.onboardCustomer()
+
+
 
 
 
