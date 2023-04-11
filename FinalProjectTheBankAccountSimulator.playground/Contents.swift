@@ -29,6 +29,11 @@ myBankAccount.greetings()
 myBankAccount.onboardCustomer()
 
 
+repeat {
+    firstDice = Int.random(in: 1...5)
+    
+    
+} while accountType != ""
 
 
 
