@@ -11,6 +11,7 @@
 		BA7DE02A2A1CFD4600C828F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7DE0292A1CFD4600C828F8 /* ContentView.swift */; };
 		BA7DE02C2A1CFD4700C828F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7DE02B2A1CFD4700C828F8 /* Assets.xcassets */; };
 		BA7DE02F2A1CFD4700C828F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7DE02E2A1CFD4700C828F8 /* Preview Assets.xcassets */; };
+		BA888EC42A1E46D900CFDB42 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA888EC32A1E46D900CFDB42 /* MyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BA7DE0292A1CFD4600C828F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA7DE02B2A1CFD4700C828F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA7DE02E2A1CFD4700C828F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA888EC32A1E46D900CFDB42 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				BA7DE0272A1CFD4600C828F8 /* ReservationsApp.swift */,
 				BA7DE0292A1CFD4600C828F8 /* ContentView.swift */,
+				BA888EC32A1E46D900CFDB42 /* MyView.swift */,
 				BA7DE02B2A1CFD4700C828F8 /* Assets.xcassets */,
 				BA7DE02D2A1CFD4700C828F8 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA888EC42A1E46D900CFDB42 /* MyView.swift in Sources */,
 				BA7DE02A2A1CFD4600C828F8 /* ContentView.swift in Sources */,
 				BA7DE0282A1CFD4600C828F8 /* ReservationsApp.swift in Sources */,
 			);

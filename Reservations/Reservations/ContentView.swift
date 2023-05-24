@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Little Lemon")
+            MyView()
             Text("Reservations")
             Stepper {
                 Text("Reservation for: \(personCount)")
