@@ -10,9 +10,8 @@ import SwiftUI
 struct ReservationForm: View {
     @State var customerName:String = ""
     var body: some View {
-        HStack {
-            Text("Type Your Name")
-            TextField("Type Your Name", text:$customerName, onEditingChanged: { status in print (status)})
+        Form {
+            TextField("Type Your Name", text: $customerName, onEditingChanged: { status in print (status)})
                 .onChange(of: customerName, perform: {
                     newValue in print(newValue)
                 })
