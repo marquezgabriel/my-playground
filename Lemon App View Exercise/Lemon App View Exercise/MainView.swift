@@ -11,10 +11,9 @@ struct MainView: View {
     var body: some View {
         ZStack {
                 // Backdrop
-                Color.cyan
-                    
+            Color.cyan.opacity(0.9)
                 // Demo Text
-                HStack {
+                HStack(spacing: 8){
                     Text("Demo")
                         .font(.title)
                         .frame(width: 100, height: 100)
@@ -24,12 +23,12 @@ struct MainView: View {
                     VStack {
                         Text("Tomato Tortelini")
                         Text("Bottarga and Carbonara")
-                    }
-                }
+                    } // :- VStack
+                } // :- HStack
                 .padding()
                 .foregroundColor(.white)
                 .shadow(radius: 5)
-            }
+            } // :- ZStack
             .edgesIgnoringSafeArea(.all)
     }
 }
