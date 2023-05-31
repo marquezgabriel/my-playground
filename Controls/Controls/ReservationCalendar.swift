@@ -23,7 +23,8 @@ struct ReservationCalendar: View {
                         Text("Done")
                     }
                 }
-                .padding(20)
+                //.padding(20)
+                .buttonStyle(.borderedProminent)
             }
             Text("Date is \(reservationDate.formatted(date: .long, time: .complete))")
         }

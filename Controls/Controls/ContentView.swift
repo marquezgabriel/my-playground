@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image("littleLemonLogo")
-            Image(systemName: "square.and.arrow.up")
+            Image(systemName: "sun.dust")
                 .imageScale(.large)
             ReservationCalendar()
         }
