@@ -8,35 +8,25 @@
 import SwiftUI
 
 struct ReservationCalendar: View {
-    @State var selectedDate = Date()
-    var dateClosedRange: ClosedRange<Date> {
-        let min = Calendar.current.date(byAdding: .day, value: 0, to: Date())!
-        let max = Calendar.current.date(byAdding: .day, value: 5, to: Date())!
-        return min...max
-        }
+    
+    @State var reservationDate = Date()
     
     var body: some View {
         Form {
-            VStack {
-                Text("Reservation Date")
-                HStack {
-                    
-                    DatePicker(selection: $selectedDate, in: dateClosedRange, displayedComponents: [.date, .hourAndMinute], label: {Image(systemName: "")}
-                        )
-                    Button (role: .destructive) {
-                            print("do something!")
-                        } label: {
-                            HStack {
-                                Image(systemName: "calendar")
-                                Text("Done!")
-                            }
-                        }
+            HStack {
+                DatePicker(
+                    selection: $reservationDate, in: Date()..., displayedComponents: [.date, .hourAndMinute]
+                ) {}
+                Button (action: {print("do something!")}) {
+                    HStack {
+                        Image(systemName: "arrow.right.circle")
+                        Text("Done")
                     }
-                Label ("\(selectedDate)", systemImage: "fork.knife")
-
                 }
-
+                .padding(20)
             }
+            Text("Date is \(reservationDate.formatted(date: .long, time: .complete))")
+        }
     }
 }
 
