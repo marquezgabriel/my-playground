@@ -9,15 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            NavigationLink (destination: Color.gray) {
-                Text("Bistro menu")
-                    .font(.title)
-            }
-            .navigationTitle("Little Lemon menus")
-            .navigationBarTitleDisplayMode(.inline)
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+            FlatView()
         }
+        .padding(20)
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
