@@ -13,6 +13,7 @@
 		BAD6569E2A2E25320056CFA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD6569D2A2E25320056CFA1 /* Preview Assets.xcassets */; };
 		BAD656A72A2E38000056CFA1 /* HierarchicalNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD656A62A2E38000056CFA1 /* HierarchicalNavigationView.swift */; };
 		BAD656A92A2E3ED30056CFA1 /* FlatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD656A82A2E3ED30056CFA1 /* FlatView.swift */; };
+		BAD656AB2A2E82960056CFA1 /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD656AA2A2E82960056CFA1 /* MyTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		BAD6569D2A2E25320056CFA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BAD656A62A2E38000056CFA1 /* HierarchicalNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalNavigationView.swift; sourceTree = "<group>"; };
 		BAD656A82A2E3ED30056CFA1 /* FlatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatView.swift; sourceTree = "<group>"; };
+		BAD656AA2A2E82960056CFA1 /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				BAD656962A2E25320056CFA1 /* Little_Lemon_NavigationApp.swift */,
 				BAD656982A2E25320056CFA1 /* ContentView.swift */,
+				BAD656AA2A2E82960056CFA1 /* MyTabView.swift */,
 				BAD656A62A2E38000056CFA1 /* HierarchicalNavigationView.swift */,
 				BAD656A82A2E3ED30056CFA1 /* FlatView.swift */,
 				BAD6569A2A2E25320056CFA1 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				BAD656992A2E25320056CFA1 /* ContentView.swift in Sources */,
 				BAD656972A2E25320056CFA1 /* Little_Lemon_NavigationApp.swift in Sources */,
 				BAD656A92A2E3ED30056CFA1 /* FlatView.swift in Sources */,
+				BAD656AB2A2E82960056CFA1 /* MyTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

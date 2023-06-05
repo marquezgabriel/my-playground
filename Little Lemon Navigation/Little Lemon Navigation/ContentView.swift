@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    var elements = ["NewView",]
+    let colors = [Color.gray]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-            FlatView()
+        NavigationView {
+            VStack{
+                Text("Exercise 1")
+                ForEach(elements.indices, id:\.self) {
+                    index in
+                    NavigationLink(destination: colors[index]) {
+                        Text(elements[index])
+                            .font(.title)
+                            .foregroundColor(colors[index])
+                    }
+                }
+            }
         }
-        .padding(20)
+        .navigationTitle("Little Lemon")
     }
-        
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
