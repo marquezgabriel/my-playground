@@ -17,13 +17,16 @@ struct ScrollView: View {
             }
             
             ForEach(elements, id: \.self) {element in
-                Text(element)
+                NavigationLink(destination: DetailView()) {
+                    Text(element)
+                }
             }
             
             Section(footer: Text("More Information")) {
                 Text("Contact us as (212) 555 3231")
             }
         }
+        .scrollContentBackground(.hidden)
         .padding()
     }
 }
