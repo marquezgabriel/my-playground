@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0B6C592A32145C00A3C118 /* Exercise1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B6C582A32145C00A3C118 /* Exercise1View.swift */; };
 		BABD9A0F2A2F651700927CE4 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABD9A0E2A2F651700927CE4 /* ScrollView.swift */; };
 		BABD9A112A2F7BEE00927CE4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABD9A102A2F7BEE00927CE4 /* DetailView.swift */; };
 		BAD656972A2E25320056CFA1 /* Little_Lemon_NavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD656962A2E25320056CFA1 /* Little_Lemon_NavigationApp.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA0B6C582A32145C00A3C118 /* Exercise1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1View.swift; sourceTree = "<group>"; };
 		BABD9A0E2A2F651700927CE4 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		BABD9A102A2F7BEE00927CE4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		BAD656932A2E25320056CFA1 /* Little Lemon Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Lemon Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 				BAD656A82A2E3ED30056CFA1 /* FlatView.swift */,
 				BABD9A0E2A2F651700927CE4 /* ScrollView.swift */,
 				BABD9A102A2F7BEE00927CE4 /* DetailView.swift */,
+				BA0B6C582A32145C00A3C118 /* Exercise1View.swift */,
 				BAD6569A2A2E25320056CFA1 /* Assets.xcassets */,
 				BAD6569C2A2E25320056CFA1 /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 				BABD9A112A2F7BEE00927CE4 /* DetailView.swift in Sources */,
 				BAD656A92A2E3ED30056CFA1 /* FlatView.swift in Sources */,
 				BAD656AB2A2E82960056CFA1 /* MyTabView.swift in Sources */,
+				BA0B6C592A32145C00A3C118 /* Exercise1View.swift in Sources */,
 				BABD9A0F2A2F651700927CE4 /* ScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
