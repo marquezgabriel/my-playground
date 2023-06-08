@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		BA0B6C592A32145C00A3C118 /* Exercise1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B6C582A32145C00A3C118 /* Exercise1View.swift */; };
+		BA0B6C5C2A32717B00A3C118 /* onTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B6C5B2A32717B00A3C118 /* onTab.swift */; };
+		BA0B6C5E2A3272F800A3C118 /* onLongPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B6C5D2A3272F800A3C118 /* onLongPress.swift */; };
+		BA0B6C602A32745800A3C118 /* Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B6C5F2A32745800A3C118 /* Drag.swift */; };
+		BA0B6C622A3276D000A3C118 /* Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B6C612A3276D000A3C118 /* Rotation.swift */; };
+		BA0B6C652A3279FE00A3C118 /* Magnification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B6C642A3279FE00A3C118 /* Magnification.swift */; };
+		BA0B6C672A327B6A00A3C118 /* Sequenced.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B6C662A327B6A00A3C118 /* Sequenced.swift */; };
 		BABD9A0F2A2F651700927CE4 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABD9A0E2A2F651700927CE4 /* ScrollView.swift */; };
 		BABD9A112A2F7BEE00927CE4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABD9A102A2F7BEE00927CE4 /* DetailView.swift */; };
 		BAD656972A2E25320056CFA1 /* Little_Lemon_NavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD656962A2E25320056CFA1 /* Little_Lemon_NavigationApp.swift */; };
@@ -21,6 +27,12 @@
 
 /* Begin PBXFileReference section */
 		BA0B6C582A32145C00A3C118 /* Exercise1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1View.swift; sourceTree = "<group>"; };
+		BA0B6C5B2A32717B00A3C118 /* onTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onTab.swift; sourceTree = "<group>"; };
+		BA0B6C5D2A3272F800A3C118 /* onLongPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onLongPress.swift; sourceTree = "<group>"; };
+		BA0B6C5F2A32745800A3C118 /* Drag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drag.swift; sourceTree = "<group>"; };
+		BA0B6C612A3276D000A3C118 /* Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotation.swift; sourceTree = "<group>"; };
+		BA0B6C642A3279FE00A3C118 /* Magnification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magnification.swift; sourceTree = "<group>"; };
+		BA0B6C662A327B6A00A3C118 /* Sequenced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequenced.swift; sourceTree = "<group>"; };
 		BABD9A0E2A2F651700927CE4 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		BABD9A102A2F7BEE00927CE4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		BAD656932A2E25320056CFA1 /* Little Lemon Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Lemon Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +56,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA0B6C5A2A32714A00A3C118 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				BA0B6C5B2A32717B00A3C118 /* onTab.swift */,
+				BA0B6C5D2A3272F800A3C118 /* onLongPress.swift */,
+				BA0B6C5F2A32745800A3C118 /* Drag.swift */,
+				BA0B6C612A3276D000A3C118 /* Rotation.swift */,
+				BA0B6C642A3279FE00A3C118 /* Magnification.swift */,
+				BA0B6C662A327B6A00A3C118 /* Sequenced.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		BA0B6C632A3276E100A3C118 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BAD656A62A2E38000056CFA1 /* HierarchicalNavigationView.swift */,
+				BAD656A82A2E3ED30056CFA1 /* FlatView.swift */,
+				BABD9A0E2A2F651700927CE4 /* ScrollView.swift */,
+				BA0B6C582A32145C00A3C118 /* Exercise1View.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		BAD6568A2A2E25320056CFA1 = {
 			isa = PBXGroup;
 			children = (
@@ -64,13 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				BAD656962A2E25320056CFA1 /* Little_Lemon_NavigationApp.swift */,
-				BAD656982A2E25320056CFA1 /* ContentView.swift */,
 				BAD656AA2A2E82960056CFA1 /* MyTabView.swift */,
-				BAD656A62A2E38000056CFA1 /* HierarchicalNavigationView.swift */,
-				BAD656A82A2E3ED30056CFA1 /* FlatView.swift */,
-				BABD9A0E2A2F651700927CE4 /* ScrollView.swift */,
+				BAD656982A2E25320056CFA1 /* ContentView.swift */,
 				BABD9A102A2F7BEE00927CE4 /* DetailView.swift */,
-				BA0B6C582A32145C00A3C118 /* Exercise1View.swift */,
+				BA0B6C632A3276E100A3C118 /* Navigation */,
+				BA0B6C5A2A32714A00A3C118 /* Gestures */,
 				BAD6569A2A2E25320056CFA1 /* Assets.xcassets */,
 				BAD6569C2A2E25320056CFA1 /* Preview Content */,
 			);
@@ -156,12 +190,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD656A72A2E38000056CFA1 /* HierarchicalNavigationView.swift in Sources */,
+				BA0B6C652A3279FE00A3C118 /* Magnification.swift in Sources */,
 				BAD656992A2E25320056CFA1 /* ContentView.swift in Sources */,
 				BAD656972A2E25320056CFA1 /* Little_Lemon_NavigationApp.swift in Sources */,
 				BABD9A112A2F7BEE00927CE4 /* DetailView.swift in Sources */,
 				BAD656A92A2E3ED30056CFA1 /* FlatView.swift in Sources */,
+				BA0B6C622A3276D000A3C118 /* Rotation.swift in Sources */,
 				BAD656AB2A2E82960056CFA1 /* MyTabView.swift in Sources */,
+				BA0B6C5E2A3272F800A3C118 /* onLongPress.swift in Sources */,
+				BA0B6C672A327B6A00A3C118 /* Sequenced.swift in Sources */,
 				BA0B6C592A32145C00A3C118 /* Exercise1View.swift in Sources */,
+				BA0B6C5C2A32717B00A3C118 /* onTab.swift in Sources */,
+				BA0B6C602A32745800A3C118 /* Drag.swift in Sources */,
 				BABD9A0F2A2F651700927CE4 /* ScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
