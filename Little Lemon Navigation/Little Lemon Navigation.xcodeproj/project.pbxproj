@@ -23,6 +23,7 @@
 		BAD656A72A2E38000056CFA1 /* HierarchicalNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD656A62A2E38000056CFA1 /* HierarchicalNavigationView.swift */; };
 		BAD656A92A2E3ED30056CFA1 /* FlatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD656A82A2E3ED30056CFA1 /* FlatView.swift */; };
 		BAD656AB2A2E82960056CFA1 /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD656AA2A2E82960056CFA1 /* MyTabView.swift */; };
+		BAFB20642A336A19003DC6F3 /* GestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB20632A336A19003DC6F3 /* GestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		BAD656A62A2E38000056CFA1 /* HierarchicalNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalNavigationView.swift; sourceTree = "<group>"; };
 		BAD656A82A2E3ED30056CFA1 /* FlatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatView.swift; sourceTree = "<group>"; };
 		BAD656AA2A2E82960056CFA1 /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		BAFB20632A336A19003DC6F3 /* GestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				BA0B6C612A3276D000A3C118 /* Rotation.swift */,
 				BA0B6C642A3279FE00A3C118 /* Magnification.swift */,
 				BA0B6C662A327B6A00A3C118 /* Sequenced.swift */,
+				BAFB20632A336A19003DC6F3 /* GestureRecognizer.swift */,
 			);
 			path = Gestures;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				BAD656972A2E25320056CFA1 /* Little_Lemon_NavigationApp.swift in Sources */,
 				BABD9A112A2F7BEE00927CE4 /* DetailView.swift in Sources */,
 				BAD656A92A2E3ED30056CFA1 /* FlatView.swift in Sources */,
+				BAFB20642A336A19003DC6F3 /* GestureRecognizer.swift in Sources */,
 				BA0B6C622A3276D000A3C118 /* Rotation.swift in Sources */,
 				BAD656AB2A2E82960056CFA1 /* MyTabView.swift in Sources */,
 				BA0B6C5E2A3272F800A3C118 /* onLongPress.swift in Sources */,
