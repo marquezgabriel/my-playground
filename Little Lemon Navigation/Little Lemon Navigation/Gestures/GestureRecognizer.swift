@@ -26,6 +26,7 @@ struct GestureRecognizer: View {
                 print("Text Long Pressed!")
                 flag = false
             }
+            
     }
 }
 
