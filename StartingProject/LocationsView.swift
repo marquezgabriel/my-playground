@@ -5,7 +5,8 @@ struct LocationsView: View {
     var body: some View {
         VStack {
             LittleLemonLogo() // 1
-                .padding(.top, 50)
+                //.padding(.top, 50)
+                .padding()
             
             EmptyView() // 2
             .padding([.leading, .trailing], 40)
