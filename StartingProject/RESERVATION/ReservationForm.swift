@@ -66,9 +66,8 @@ struct ReservationForm: View {
                         // to today could be selected
                         //
                         // displayedComponents specify that date and time must be displayed
-                        DatePicker(selection: $reservationDate, in: Date()...,
-                                   displayedComponents: [.date, .hourAndMinute]) {
-                            //              Text("Select a date")
+                        DatePicker(selection: $reservationDate, in: Date()..., displayedComponents: [.date, .hourAndMinute]) {
+                            // Text("Select a date")
                         }
                     }
                 }
