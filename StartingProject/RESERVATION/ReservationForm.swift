@@ -121,16 +121,23 @@ struct ReservationForm: View {
                     
                     
                     // add the RESERVE button
-                    Button(action: {
-
-                    }, label: {
-                        Text("CONFIRM RESERVATION")
-                    })
+                    
+                    HStack {
+                        Spacer()
+                        Button(action: {validateForm()}, label: { Text("CONFIRM RESERVATION")})
+                            .alert("ERROR", isPresented: $showFormInvalidMessage, actions: {
+                            Button("OK", role: .cancel) { }
+                            }, message: {Text(self.errorMessage)})
+                        
+                        Spacer()
+                    }
+                    
                     .padding(.init(top: 10, leading: 30, bottom: 10, trailing: 30))
                     .foregroundColor(.white)
                     .background(Color.blue)
                     .cornerRadius(20)
                     .padding(.top, 10)
+                    
                 }
             }
             
