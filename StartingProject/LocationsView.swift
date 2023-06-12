@@ -8,7 +8,7 @@ struct LocationsView: View {
                 //.padding(.top, 50)
                 .padding()
             
-            EmptyView() // 2
+            ReservationButton() // 2
             .padding([.leading, .trailing], 40)
             .padding([.top, .bottom], 8)
             .background(Color.gray.opacity(0.2))

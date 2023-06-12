@@ -19,6 +19,7 @@
 		41B542692907D0510092B0E7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B542682907D0510092B0E7 /* MainView.swift */; };
 		41B542752907E0540092B0E7 /* ReservationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B542742907E0540092B0E7 /* ReservationForm.swift */; };
 		41B5427D2907F4850092B0E7 /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B5427C2907F4850092B0E7 /* ReservationView.swift */; };
+		EFE170A02A378C2D0005FA39 /* ReservationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE1709F2A378C2D0005FA39 /* ReservationButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		41B542722907D2360092B0E7 /* RestaurantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		41B542742907E0540092B0E7 /* ReservationForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationForm.swift; sourceTree = "<group>"; };
 		41B5427C2907F4850092B0E7 /* ReservationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
+		EFE1709F2A378C2D0005FA39 /* ReservationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				41AECB662906D62E007983FF /* StartingProjectApp.swift */,
 				41AECB782906D6C2007983FF /* Model.swift */,
 				41AECB7C2906DE4B007983FF /* LitttleLemonLogo.swift */,
+				EFE1709F2A378C2D0005FA39 /* ReservationButton.swift */,
 				41265845290A8335001023C9 /* RESTAURANT */,
 				41265844290A8311001023C9 /* RESERVATION */,
 				41AECB6A2906D638007983FF /* Assets.xcassets */,
@@ -181,6 +184,7 @@
 				41AECB7D2906DE4B007983FF /* LitttleLemonLogo.swift in Sources */,
 				41A124EA2919468900088C01 /* RestaurantLocation.swift in Sources */,
 				41B5427D2907F4850092B0E7 /* ReservationView.swift in Sources */,
+				EFE170A02A378C2D0005FA39 /* ReservationButton.swift in Sources */,
 				41A124E92919468400088C01 /* RestaurantView.swift in Sources */,
 				41A124EB2919468F00088C01 /* Model.swift in Sources */,
 				41AECB692906D62E007983FF /* LocationsView.swift in Sources */,
