@@ -24,6 +24,8 @@
 		BAD656A92A2E3ED30056CFA1 /* FlatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD656A82A2E3ED30056CFA1 /* FlatView.swift */; };
 		BAD656AB2A2E82960056CFA1 /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD656AA2A2E82960056CFA1 /* MyTabView.swift */; };
 		BAFB20642A336A19003DC6F3 /* GestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB20632A336A19003DC6F3 /* GestureRecognizer.swift */; };
+		EFE1707F2A374F060005FA39 /* LittleLemonLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE1707E2A374F060005FA39 /* LittleLemonLogo.swift */; };
+		EFE170822A3752260005FA39 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE170812A3752260005FA39 /* LocationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		BAD656A82A2E3ED30056CFA1 /* FlatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatView.swift; sourceTree = "<group>"; };
 		BAD656AA2A2E82960056CFA1 /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
 		BAFB20632A336A19003DC6F3 /* GestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizer.swift; sourceTree = "<group>"; };
+		EFE1707E2A374F060005FA39 /* LittleLemonLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonLogo.swift; sourceTree = "<group>"; };
+		EFE170812A3752260005FA39 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				BAD656AA2A2E82960056CFA1 /* MyTabView.swift */,
 				BAD656982A2E25320056CFA1 /* ContentView.swift */,
 				BABD9A102A2F7BEE00927CE4 /* DetailView.swift */,
+				EFE170812A3752260005FA39 /* LocationsView.swift */,
+				EFE170802A3750390005FA39 /* Images */,
 				BA0B6C632A3276E100A3C118 /* Navigation */,
 				BA0B6C5A2A32714A00A3C118 /* Gestures */,
 				BAD6569A2A2E25320056CFA1 /* Assets.xcassets */,
@@ -120,6 +126,14 @@
 				BAD6569D2A2E25320056CFA1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFE170802A3750390005FA39 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EFE1707E2A374F060005FA39 /* LittleLemonLogo.swift */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +216,8 @@
 				BA0B6C622A3276D000A3C118 /* Rotation.swift in Sources */,
 				BAD656AB2A2E82960056CFA1 /* MyTabView.swift in Sources */,
 				BA0B6C5E2A3272F800A3C118 /* onLongPress.swift in Sources */,
+				EFE1707F2A374F060005FA39 /* LittleLemonLogo.swift in Sources */,
+				EFE170822A3752260005FA39 /* LocationsView.swift in Sources */,
 				BA0B6C672A327B6A00A3C118 /* Sequenced.swift in Sources */,
 				BA0B6C592A32145C00A3C118 /* Exercise1View.swift in Sources */,
 				BA0B6C5C2A32717B00A3C118 /* onTab.swift in Sources */,

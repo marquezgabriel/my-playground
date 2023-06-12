@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            GestureRecognizer()
+        Text("Welcome to my app!")
     }
 }
 
