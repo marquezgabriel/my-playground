@@ -24,7 +24,6 @@ struct MainView: View {
                 }
         }
         .environmentObject(model)
-
     }
 }
 
