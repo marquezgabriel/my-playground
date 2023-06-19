@@ -23,3 +23,13 @@ let recipeInformation = RecipeInformation.allergens(information: "Peanuts, Milk,
 switch recipeInformation {
 case .allergens(let information): print("The meal includes the following allergens: \(information)")
 }
+
+enum Ingredient2: String {
+    case lettuce = "Romain Lettuce"
+    case croutons = "Salted Croutons"
+    case chicken = "Free Range Chicken"
+}
+
+print("This is the ingredient enumeration value: \(Ingredient2.lettuce)")
+
+
