@@ -29,5 +29,46 @@ confirmationCodes.remove("LL3454")
 print("Total phone numers: \(allPhoneNumbers.count)")
 print("Total confirmation codes: \(confirmationCodes.count)")
 
+var mySet: Set<String> = []
+print (mySet)
+
+let answers: Set<String> = ["True", "True", "False", "True", "False"]
+print(answers)
+
+var cities: Set = ["Cairo", "London", "Paris"]
+var cities2: Set<String> = ["Moscow", "Hanoi", "Zurich"]
 
 
+//
+
+var numbersA : Set = [100, 102, 103]
+print(numbersA)
+
+var numbersB : Set = [101, 103, 100]
+print(numbersB)
+
+let numbers = numbersA.union(numbersB)
+print(numbers)
+
+
+//
+
+enum Week: Int, CaseIterable {
+  case Monday = 1
+  case Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+}
+
+for day in Week.allCases {
+  print("\(day) is day \(day.rawValue) of the week")
+}
+
+//
+
+enum PastaTypes: Int {
+    case spaghetti
+    case penne
+    case ravioli
+    case rigatoni
+}
+
+print(PastaTypes.penne.rawValue)
