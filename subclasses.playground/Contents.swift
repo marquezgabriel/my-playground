@@ -1,6 +1,8 @@
 class Vegetable {
-    // property
-    let primaryColor = "Green"
+    // computed property
+    var primaryColor: String {
+            "Green"
+        }
     
     // method
     func sing() {
@@ -13,11 +15,17 @@ class Spinach: Vegetable {
 }
 
 class Broccoli: Vegetable {
-    
+    override func sing() {
+        print("\(primaryColor) is my favourite color.")
+        super.sing()
+        print("I like the sun.")
+    }
 }
 
 class Carrot: Vegetable {
-    
+    override var primaryColor: String {
+        "Orange"
+    }
 }
 
 let spinach = Spinach()
@@ -31,5 +39,3 @@ print(carrot.primaryColor)
 spinach.sing()
 broccoli.sing()
 carrot.sing()
-
-
