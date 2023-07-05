@@ -1,19 +1,21 @@
-
-
-func findRecipe(folder: Folder) -> String {
-    print("Searching folder: \(folder.name)")
-        if folder.hasRecipe {
-            return.hasRecipe
-        }
+func output(n: Int) {
+    if (n==0) { // step 1 base case
+        return
     }
-
-var result: String? = nil
-    for childFolder in folder.folders {
-        result = findRecipe(folder: childFolder)
-        if result != nil {
-            return result
-        }
+    else {
+        print(n) // step 2 perform the work
+        output(n: n-1) // step 3 repeat recursion with smaller problem
     }
-    return result
 }
 
+output(n:6)
+
+
+func output2(n: Int) -> Int {
+    if(n==0) { // step 1 base case
+        return 0
+    }
+    else {
+        return n + output(n: n - 1) // step 2 and step 3
+    }
+}
