@@ -7,49 +7,47 @@
 
 import SwiftUI
 
-struct MenuItem: Identifiable {
-    let id = UUID()
-    let name: String
-    let category: String
-}
-
 struct ContentView: View {
     let columns = [
-        GridItem(.adaptive(minimum: 100))
-    ]
-
-    let menuItems = [
-        MenuItem(name: "Burger", category: "Food"),
-        MenuItem(name: "Pasta", category: "Food"),
-        MenuItem(name: "Coke", category: "Drink"),
-        MenuItem(name: "Coffee", category: "Drink"),
-        MenuItem(name: "Cake", category: "Dessert"),
-        MenuItem(name: "Ice cream", category: "Dessert"),
+        GridItem(.flexible()),
+        GridItem(.flexible())
     ]
 
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(menuItems) { item in
-                        VStack {
-                            Text(item.name)
-                                .font(.headline)
-                            Text(item.category)
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                        }
-                        .padding()
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
+                    ForEach(mockData) { item in
+                        MenuItemView(item: item)
                     }
                 }
-                .padding()
-                .navigationTitle("Menu")
+                .padding(.horizontal)
             }
+            .navigationTitle("Menu")
+        }
+        .navigationBarItems(trailing: NavigationLink(destination: MenuSettingsView()) {
+            Image(systemName: "gear")
+        })
+    }
+}
+
+struct MenuItemView: View {
+    let item: MenuItem
+
+    var body: some View {
+        NavigationLink(destination: MenuItemDetailView(item: item)) {
+            VStack {
+                Text(item.name)
+                Text("Price: $\(item.price, specifier: "%.2f")")
+            }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(radius: 10)
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
