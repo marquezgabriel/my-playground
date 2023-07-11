@@ -8,3 +8,14 @@ func sum(n: Int) -> Int {
 
 let result = sum(n: 6)
 print(result)
+
+
+func output() {
+    defer { print(1)}
+    print("2")
+    defer {print(3)}
+    print(4)
+}
+
+let number = output()
+print(number)
