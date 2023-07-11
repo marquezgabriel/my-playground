@@ -7,15 +7,47 @@
 
 import SwiftUI
 
+struct MenuItem: Identifiable {
+    let id = UUID()
+    let name: String
+    let category: String
+}
+
 struct ContentView: View {
+    let columns = [
+        GridItem(.adaptive(minimum: 100))
+    ]
+
+    let menuItems = [
+        MenuItem(name: "Burger", category: "Food"),
+        MenuItem(name: "Pasta", category: "Food"),
+        MenuItem(name: "Coke", category: "Drink"),
+        MenuItem(name: "Coffee", category: "Drink"),
+        MenuItem(name: "Cake", category: "Dessert"),
+        MenuItem(name: "Ice cream", category: "Dessert"),
+    ]
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(menuItems) { item in
+                        VStack {
+                            Text(item.name)
+                                .font(.headline)
+                            Text(item.category)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        .padding()
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                    }
+                }
+                .padding()
+                .navigationTitle("Menu")
+            }
         }
-        .padding()
     }
 }
 
