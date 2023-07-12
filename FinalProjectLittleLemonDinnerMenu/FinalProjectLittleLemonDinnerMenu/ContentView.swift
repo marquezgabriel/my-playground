@@ -9,16 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        
-        
-        
-        
-        VStack {
-            LittleLemonLogo()
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                VStack {
+                    MenuItemsView()
+                }
+                .navigationTitle("Menu")
+            }
         }
-        .padding()
+
+        
+        
+//        VStack {
+//            LittleLemonLogo()
+//            Text("Hello, world!")
+//            Image(systemName:"globe")
+//
+//        }
+//        .padding()
     }
 }
 
