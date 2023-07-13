@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct MenuItemsView: View {
+    
     var body: some View {
         ScrollView {
-            Text("Little Lemon Logo")
-                .foregroundColor(.black)
-                
+            
+            
+
+            
+            
+            
         }
     }
 }

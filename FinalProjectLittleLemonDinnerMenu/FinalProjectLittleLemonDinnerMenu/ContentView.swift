@@ -11,22 +11,11 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                VStack {
-                    MenuItemsView()
-                }
-                .navigationTitle("Menu")
+                MenuItemsView()
             }
+            .navigationTitle("Menu")
         }
-
         
-        
-//        VStack {
-//            LittleLemonLogo()
-//            Text("Hello, world!")
-//            Image(systemName:"globe")
-//
-//        }
-//        .padding()
     }
 }
 
