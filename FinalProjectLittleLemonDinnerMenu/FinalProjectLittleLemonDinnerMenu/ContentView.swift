@@ -11,11 +11,10 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                MenuItemsView()
+                
             }
             .navigationTitle("Menu")
         }
-        
     }
 }
 

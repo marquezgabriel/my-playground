@@ -8,13 +8,42 @@
 import SwiftUI
 
 struct MenuItemDetailsView: View {
+    let item: MenuItem
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(item.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Text(item.name)
+                .font(.headline)
+            Text("$\(item.price, specifier: "%.2f")")
+                .font(.subheadline)
+            Spacer()
+        }
+        .padding()
+        .navigationBarTitle(Text(item.name), displayMode: .inline)
     }
 }
 
-struct MenuItemDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        MenuItemDetailsView()
+struct MenuListView: View {
+    let sections: [MenuSection]
+
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(sections) { section in
+                    Section(header: Text(section.name)) {
+                        ForEach(section.items) { item in
+                            MenuItemsView(item: item)
+                        }
+                    }
+                }
+            }
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle("Menu")
+        }
     }
 }
+
+
