@@ -9,11 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            List {
-                
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))]) {
+                    ForEach(mockSections) { section in
+                        Section(header: Text(section.name)) {
+                            ForEach(section.items) { item in
+                                MenuItemsView(item: item)
+                            }
+                        }
+                    }
+                }
+                .navigationTitle("Menu")
+                .navigationBarItems(trailing: NavigationLink(destination: MenuItemsOptionView()) {
+                    Image(systemName: "gear")
+                })
             }
-            .navigationTitle("Menu")
         }
     }
 }
@@ -23,3 +34,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

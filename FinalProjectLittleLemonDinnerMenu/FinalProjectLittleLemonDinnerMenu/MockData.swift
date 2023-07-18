@@ -64,3 +64,10 @@ let mockData: [MenuItem] = [
     MenuItem(name: "Tulumba", category: "Dessert", price: 4.99, imageName:"tulumba", description: "Sweet Turkish tulumba"),
     // add more items as you wish...
 ]
+
+let foodSection = MenuSection(name: "Food", items: mockData.filter { $0.category == "Food" })
+let drinkSection = MenuSection(name: "Drink", items: mockData.filter { $0.category == "Drink" })
+let dessertSection = MenuSection(name: "Dessert", items: mockData.filter { $0.category == "Dessert" })
+
+let mockSections = [foodSection, drinkSection, dessertSection]
+
