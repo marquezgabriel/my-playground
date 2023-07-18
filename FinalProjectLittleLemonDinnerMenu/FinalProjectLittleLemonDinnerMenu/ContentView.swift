@@ -11,9 +11,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))]) {
-                    ForEach(mockSections) { section in
-                        Section(header: Text(section.name)) {
+                ForEach(mockSections) { section in
+                    VStack(alignment: .leading) {
+                        Text(section.name)
+                            .font(.headline)
+                            .padding(.leading)
+                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))]) {
                             ForEach(section.items) { item in
                                 MenuItemsView(item: item)
                             }
