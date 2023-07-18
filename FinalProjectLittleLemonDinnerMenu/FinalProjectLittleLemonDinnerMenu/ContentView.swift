@@ -7,6 +7,32 @@
 
 import SwiftUI
 
+enum Category: String, CaseIterable {
+    case food = "Food"
+    case drink = "Drink"
+    case dessert = "Dessert"
+}
+
+enum SortOption: String, CaseIterable {
+    case mostPopular = "Most Popular"
+    case price = "Price $-$$$"
+    case name = "A-Z"
+}
+
+
+//struct ContentView: View {
+//    var body: some View {
+//        NavigationView {
+//            MenuGridView(menuItems: mockData)
+//                .navigationTitle("Menu")
+//                .navigationBarItems(trailing: NavigationLink(destination: MenuItemsOptionView()) {
+//                    Image(systemName: "gear")
+//                })
+//        }
+//    }
+//}
+
+
 struct ContentView: View {
     var body: some View {
         NavigationView {

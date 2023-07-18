@@ -9,8 +9,22 @@ import SwiftUI
 
 struct MenuItemsOptionView: View {
     var body: some View {
-        Text("Menu Options")
-            .navigationTitle("Options")
+        List {
+            Section(header: Text("Selected Categories")) {
+                ForEach(Category.allCases, id: \.self) { category in
+                    Text(category.rawValue)
+                }
+            }
+
+            Section(header: Text("Sort by")) {
+                ForEach(SortOption.allCases, id: \.self) { sortOption in
+                    Text(sortOption.rawValue)
+                }
+            }
+        }
+        .listStyle(GroupedListStyle())
+        .navigationTitle("Menu Options")
     }
 }
+
 
