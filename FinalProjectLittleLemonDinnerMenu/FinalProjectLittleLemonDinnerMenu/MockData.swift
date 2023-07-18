@@ -14,6 +14,7 @@ struct MenuItem: Identifiable {
     let price: Double
     let imageName: String
     let description: String
+    // let ingredients: [Ingredient]
 }
 
 struct MenuSection: Identifiable {
