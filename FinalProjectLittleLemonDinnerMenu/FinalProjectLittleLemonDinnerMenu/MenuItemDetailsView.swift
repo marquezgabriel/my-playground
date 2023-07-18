@@ -15,10 +15,14 @@ struct MenuItemDetailsView: View {
             Image(item.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            Text(item.name)
+            HStack {
+                Text(item.name)
+                    .font(.headline)
+                Text("$\(item.price, specifier: "%.2f")")
+                    .font(.subheadline)
+            }
+            Text(item.description)
                 .font(.headline)
-            Text("$\(item.price, specifier: "%.2f")")
-                .font(.subheadline)
             Spacer()
         }
         .padding()
