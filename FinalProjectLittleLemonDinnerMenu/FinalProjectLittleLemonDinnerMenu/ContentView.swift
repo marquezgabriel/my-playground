@@ -16,7 +16,9 @@ struct ContentView: View {
                         Text(section.name)
                             .font(.headline)
                             .padding(.leading)
-                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))]) {
+                        LazyVGrid(columns: [GridItem(.fixed(UIScreen.main.bounds.width / 3), spacing: 5),
+                                            GridItem(.fixed(UIScreen.main.bounds.width / 3), spacing: 5),
+                                            GridItem(.fixed(UIScreen.main.bounds.width / 3), spacing: 5)]) {
                             ForEach(section.items) { item in
                                 MenuItemsView(item: item)
                             }
@@ -31,6 +33,7 @@ struct ContentView: View {
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
