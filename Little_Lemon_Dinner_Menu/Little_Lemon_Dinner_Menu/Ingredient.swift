@@ -8,9 +8,9 @@
 import Foundation
 
 enum Ingredient: String, CaseIterable {
-    case spinach = "Spinach"
     case broccoli = "Broccoli"
     case carrot = "Carrot"
     case pasta = "Pasta"
+    case spinach = "Spinach"
     case tomatoSauce = "Tomato sauce"
 }
