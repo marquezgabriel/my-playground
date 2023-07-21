@@ -1,5 +1,5 @@
 //
-//  Little_Lemon_Dinner_MenuTests.swift
+//  MenuItemTests.swift
 //  Little_Lemon_Dinner_MenuTests
 //
 //  Created by Gabriel Marquez on 2023-07-21.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import Little_Lemon_Dinner_Menu
 
-final class Little_Lemon_Dinner_MenuTests: XCTestCase {
+final class MenuItemTests: XCTestCase {
     let viewModel = MenuViewViewModel()
         
     func test_checkFoodTitle() {

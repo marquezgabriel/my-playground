@@ -8,19 +8,64 @@
 import SwiftUI
 
 struct MenuItemsView: View {
+    @StateObject private var viewModel = MenuViewViewModel()
+    private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    
     var body: some View {
         NavigationStack {
             ScrollView {
-                
-                
-                
+                VStack {
+                    HStack {
+                        Text("Food")
+                            .font(.title)
+                            .fontWeight(.medium)
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    LazyVGrid(columns: threeColumnGrid) {
+                        ForEach(viewModel.foods, id: \.self) { menuItem in
+                            NavigationLink(destination: MenuItemDetailsView(menuItem: menuItem)) {
+                                MenuItemView(menuItem: menuItem)
+                            }
+                        }
+                    }
+                    HStack {
+                        Text("Drink")
+                            .font(.title)
+                            .fontWeight(.medium)
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    LazyVGrid(columns: threeColumnGrid) {
+                        ForEach(viewModel.drinks, id: \.self) { menuItem in
+                            NavigationLink(destination: MenuItemDetailsView(menuItem: menuItem)) {
+                                MenuItemView(menuItem: menuItem)
+                            }
+                        }
+                    }
+                    HStack {
+                        Text("Dessert")
+                            .font(.title)
+                            .fontWeight(.medium)
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    LazyVGrid(columns: threeColumnGrid) {
+                        ForEach(viewModel.desserts, id: \.self) { menuItem in
+                            NavigationLink(destination: MenuItemDetailsView(menuItem: menuItem)) {
+                                MenuItemView(menuItem: menuItem)
+                            }
+                        }
+                    }
+                }
             }
             .navigationTitle("Menu")
             .navigationBarItems(
                 trailing: NavigationLink(destination: MenuItemsOptionView()) {
-                        Image(systemName: "gear")
+                        Image(systemName: "slider.horizontal.3")
                 }
             )
+            .padding()
         }
     }
 }

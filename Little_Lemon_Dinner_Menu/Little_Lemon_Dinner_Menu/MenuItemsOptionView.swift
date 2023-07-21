@@ -16,14 +16,15 @@ struct MenuItemsOptionView: View {
                         Text(category.rawValue)
                     }
                 }
-                Section("Sort by") {
+                Section("Sorted by") {
                     ForEach(SortBy.allCases, id: \.self) { category in
                         Text(category.rawValue)
                     }
                 }
             }
+            .listStyle(.grouped)
         }
-        .navigationTitle("Menu filters")
+        .navigationTitle("Filter")
     }
 }
 

@@ -5,6 +5,8 @@
 //  Created by Gabriel Marquez on 2023-07-21.
 //
 
+// FULL REVIEW REQUERED
+
 import Foundation
 
 class MenuViewViewModel: ObservableObject {
