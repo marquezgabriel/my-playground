@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EF5F4C892A6A98DF0071385E /* Little_Lemon_Dinner_MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4C882A6A98DF0071385E /* Little_Lemon_Dinner_MenuApp.swift */; };
-		EF5F4C8B2A6A98DF0071385E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4C8A2A6A98DF0071385E /* ContentView.swift */; };
 		EF5F4C8D2A6A98E10071385E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5F4C8C2A6A98E10071385E /* Assets.xcassets */; };
 		EF5F4C902A6A98E10071385E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5F4C8F2A6A98E10071385E /* Preview Assets.xcassets */; };
 		EF5F4C9A2A6A98E10071385E /* Little_Lemon_Dinner_MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4C992A6A98E10071385E /* Little_Lemon_Dinner_MenuTests.swift */; };
 		EF5F4CA42A6A98E10071385E /* Little_Lemon_Dinner_MenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4CA32A6A98E10071385E /* Little_Lemon_Dinner_MenuUITests.swift */; };
 		EF5F4CA62A6A98E10071385E /* Little_Lemon_Dinner_MenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4CA52A6A98E10071385E /* Little_Lemon_Dinner_MenuUITestsLaunchTests.swift */; };
+		EF5F4CB32A6A9E420071385E /* MenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4CB22A6A9E420071385E /* MenuItemsView.swift */; };
+		EF5F4CB52A6A9E680071385E /* MenuItemsOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4CB42A6A9E680071385E /* MenuItemsOptionView.swift */; };
+		EF5F4CB72A6A9E870071385E /* MenuItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4CB62A6A9E870071385E /* MenuItemDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		EF5F4C852A6A98DF0071385E /* Little_Lemon_Dinner_Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Little_Lemon_Dinner_Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5F4C882A6A98DF0071385E /* Little_Lemon_Dinner_MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Little_Lemon_Dinner_MenuApp.swift; sourceTree = "<group>"; };
-		EF5F4C8A2A6A98DF0071385E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF5F4C8C2A6A98E10071385E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF5F4C8F2A6A98E10071385E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF5F4C952A6A98E10071385E /* Little_Lemon_Dinner_MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Little_Lemon_Dinner_MenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,9 @@
 		EF5F4C9F2A6A98E10071385E /* Little_Lemon_Dinner_MenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Little_Lemon_Dinner_MenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5F4CA32A6A98E10071385E /* Little_Lemon_Dinner_MenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Little_Lemon_Dinner_MenuUITests.swift; sourceTree = "<group>"; };
 		EF5F4CA52A6A98E10071385E /* Little_Lemon_Dinner_MenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Little_Lemon_Dinner_MenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF5F4CB22A6A9E420071385E /* MenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsView.swift; sourceTree = "<group>"; };
+		EF5F4CB42A6A9E680071385E /* MenuItemsOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsOptionView.swift; sourceTree = "<group>"; };
+		EF5F4CB62A6A9E870071385E /* MenuItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				EF5F4C882A6A98DF0071385E /* Little_Lemon_Dinner_MenuApp.swift */,
-				EF5F4C8A2A6A98DF0071385E /* ContentView.swift */,
+				EF5F4CB22A6A9E420071385E /* MenuItemsView.swift */,
+				EF5F4CB42A6A9E680071385E /* MenuItemsOptionView.swift */,
+				EF5F4CB62A6A9E870071385E /* MenuItemDetailsView.swift */,
 				EF5F4C8C2A6A98E10071385E /* Assets.xcassets */,
 				EF5F4C8E2A6A98E10071385E /* Preview Content */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF5F4C8B2A6A98DF0071385E /* ContentView.swift in Sources */,
+				EF5F4CB32A6A9E420071385E /* MenuItemsView.swift in Sources */,
 				EF5F4C892A6A98DF0071385E /* Little_Lemon_Dinner_MenuApp.swift in Sources */,
+				EF5F4CB52A6A9E680071385E /* MenuItemsOptionView.swift in Sources */,
+				EF5F4CB72A6A9E870071385E /* MenuItemDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +433,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +463,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
