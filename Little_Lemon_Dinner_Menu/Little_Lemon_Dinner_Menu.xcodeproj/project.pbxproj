@@ -19,6 +19,7 @@
 		EF5F4CB92A6AAAEB0071385E /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4CB82A6AAAEB0071385E /* MenuCategory.swift */; };
 		EF5F4CBB2A6AAE170071385E /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4CBA2A6AAE170071385E /* SortBy.swift */; };
 		EF5F4CBD2A6AB16B0071385E /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4CBC2A6AB16B0071385E /* Ingredient.swift */; };
+		EF5F4CBF2A6AB4050071385E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F4CBE2A6AB4050071385E /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		EF5F4CB82A6AAAEB0071385E /* MenuCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategory.swift; sourceTree = "<group>"; };
 		EF5F4CBA2A6AAE170071385E /* SortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
 		EF5F4CBC2A6AB16B0071385E /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		EF5F4CBE2A6AB4050071385E /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				EF5F4CB82A6AAAEB0071385E /* MenuCategory.swift */,
 				EF5F4CBA2A6AAE170071385E /* SortBy.swift */,
 				EF5F4CBC2A6AB16B0071385E /* Ingredient.swift */,
+				EF5F4CBE2A6AB4050071385E /* MenuItem.swift */,
 				EF5F4C8C2A6A98E10071385E /* Assets.xcassets */,
 				EF5F4C8E2A6A98E10071385E /* Preview Content */,
 			);
@@ -277,6 +280,7 @@
 				EF5F4CBD2A6AB16B0071385E /* Ingredient.swift in Sources */,
 				EF5F4C892A6A98DF0071385E /* Little_Lemon_Dinner_MenuApp.swift in Sources */,
 				EF5F4CB52A6A9E680071385E /* MenuItemsOptionView.swift in Sources */,
+				EF5F4CBF2A6AB4050071385E /* MenuItem.swift in Sources */,
 				EF5F4CB72A6A9E870071385E /* MenuItemDetailsView.swift in Sources */,
 				EF5F4CB92A6AAAEB0071385E /* MenuCategory.swift in Sources */,
 			);
