@@ -5,8 +5,6 @@
 //  Created by Gabriel Marquez on 2023-07-21.
 //
 
-// FULL REVIEW REQUERED
-
 import Foundation
 
 class MenuViewViewModel: ObservableObject {
@@ -44,47 +42,4 @@ class MenuViewViewModel: ObservableObject {
         MenuItem(title: "Dessert 4", price: 9.0, ordersCount: 6, menuCategory: .dessert, ingredient: [])
     ]
     
-//    @Published var isOpenedOptionView = false
-//    @Published var isShowFood = true
-//    @Published var isShowDrinks = true
-//    @Published var isShowDesserts = true
-//    @Published var sortBy = SortBy.fromAtoZ
-    
-//    func updateMenuItems() {
-//        switch sortBy {
-//        // Sorting by number of orders
-//        case .mostPopular:
-//            foods.sort() { $0.ordersCount > $1.ordersCount }
-//            drinks.sort() { $0.ordersCount > $1.ordersCount }
-//            desserts.sort() { $0.ordersCount > $1.ordersCount }
-//        // Sorting by cost from lowest to highest
-//        case .fromLowPrice:
-//            foods.sort() { $0.price < $1.price }
-//            drinks.sort() { $0.price < $1.price }
-//            desserts.sort() { $0.price < $1.price }
-//        // Sort by titles alphabetically and by digits
-//        case .fromAtoZ:
-//            foods.sort() {
-//                sortByTitle(lhs: $0, rhs: $1)
-//            }
-//            drinks.sort() {
-//                sortByTitle(lhs: $0, rhs: $1)
-//            }
-//            desserts.sort() {
-//                sortByTitle(lhs: $0, rhs: $1)
-//            }
-//        }
-//    }
-
-//    func sortByTitle(lhs: MenuItem, rhs: MenuItem) -> Bool {
-//        let lhsTitle = lhs.title.split(separator: " ")
-//        let rhsTitle = rhs.title.split(separator: " ")
-//        let lhsNumber = Int(lhsTitle[lhsTitle.count - 1]) ?? 0
-//        let rhsNumber = Int(rhsTitle[rhsTitle.count - 1]) ?? 0
-//        if lhsNumber != rhsNumber {
-//            return lhsNumber < rhsNumber
-//        } else {
-//            return lhs.title < rhs.title
-//        }
-//    }
 }

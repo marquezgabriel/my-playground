@@ -5,8 +5,6 @@
 //  Created by Gabriel Marquez on 2023-07-21.
 //
 
-// FULL REVIEW REQUERED
-
 import SwiftUI
 
 struct MenuItemView: View {
@@ -22,9 +20,11 @@ struct MenuItemView: View {
     }
 }
 
-//struct MenuItemView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MenuItemView()
-//    }
-//}
+struct MenuItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        let menuItem = MenuItem(title: "Food 1", price: 11.0, ordersCount: 21, menuCategory: .food, ingredient: [.tomatoSauce, .carrot, .pasta])
+        MenuItemView(menuItem: menuItem)
+    }
+}
+
 
