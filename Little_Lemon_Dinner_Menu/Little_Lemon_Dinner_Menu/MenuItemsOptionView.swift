@@ -9,7 +9,21 @@ import SwiftUI
 
 struct MenuItemsOptionView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                Section("Selected categories") {
+                    ForEach(MenuCategory.allCases, id: \.self) { category in
+                        Text(category.rawValue)
+                    }
+                }
+                Section("Sort by") {
+                    ForEach(SortBy.allCases, id: \.self) { category in
+                        Text(category.rawValue)
+                    }
+                }
+            }
+        }
+        .navigationTitle("Menu filters")
     }
 }
 
