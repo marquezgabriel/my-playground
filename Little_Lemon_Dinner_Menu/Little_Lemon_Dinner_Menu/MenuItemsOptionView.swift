@@ -25,6 +25,10 @@ struct MenuItemsOptionView: View {
             .listStyle(.grouped)
         }
         .navigationTitle("Filter")
+        .toolbar {
+            Button("Done") {
+            }
+        }
     }
 }
 

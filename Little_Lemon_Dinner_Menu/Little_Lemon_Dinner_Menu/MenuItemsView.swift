@@ -21,7 +21,6 @@ struct MenuItemsView: View {
                             .fontWeight(.medium)
                         Spacer()
                     }
-                    .padding(.horizontal)
                     LazyVGrid(columns: threeColumnGrid) {
                         ForEach(viewModel.foods, id: \.self) { menuItem in
                             NavigationLink(destination: MenuItemDetailsView(menuItem: menuItem)) {
@@ -35,7 +34,6 @@ struct MenuItemsView: View {
                             .fontWeight(.medium)
                         Spacer()
                     }
-                    .padding(.horizontal)
                     LazyVGrid(columns: threeColumnGrid) {
                         ForEach(viewModel.drinks, id: \.self) { menuItem in
                             NavigationLink(destination: MenuItemDetailsView(menuItem: menuItem)) {
@@ -49,7 +47,6 @@ struct MenuItemsView: View {
                             .fontWeight(.medium)
                         Spacer()
                     }
-                    .padding(.horizontal)
                     LazyVGrid(columns: threeColumnGrid) {
                         ForEach(viewModel.desserts, id: \.self) { menuItem in
                             NavigationLink(destination: MenuItemDetailsView(menuItem: menuItem)) {
@@ -58,6 +55,7 @@ struct MenuItemsView: View {
                         }
                     }
                 }
+                .padding([.leading, .trailing])
             }
             .navigationTitle("Menu")
             .navigationBarItems(
@@ -65,7 +63,6 @@ struct MenuItemsView: View {
                         Image(systemName: "slider.horizontal.3")
                 }
             )
-            .padding()
         }
     }
 }
